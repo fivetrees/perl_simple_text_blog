@@ -37,8 +37,8 @@ sub search {
   my @seart;
   my %count;
   for (@article_file) {
-    push @seart, $_ if /$artword/;
-    push @seart, $_ if (fgrep { /$artword/ } "$_");
+    push @seart, $_ if /$artword/i;
+    push @seart, $_ if (fgrep { /$artword/i } "$_");
   }
   #去掉@seart数组中重复的元素，也就是碰到相同的就去掉
   my @retart = grep { ++$count{$_} < 2} @seart;
