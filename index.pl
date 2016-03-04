@@ -32,6 +32,7 @@ sub input_keyword {
 sub search {
   my $article_dir = "article_data";
   my $artword = param("keyword");
+  $artword = "" unless($artword);
   chdir 'article_data' or die "cannot chdir to article_data: $!";
   my @article_file = <*>;
   my @seart;
