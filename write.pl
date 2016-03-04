@@ -4,7 +4,7 @@
 #date: 2013-05-30
 #desc: write artict
 
-use 5.018;
+use 5.010;
 use strict;
 use warnings;
 use autodie;
