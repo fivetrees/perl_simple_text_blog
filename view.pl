@@ -4,7 +4,7 @@
 #date: 2013-06-04
 #desc: view artict
 
-use 5.018;
+use 5.010;
 use strict;
 use warnings;
 use autodie;
